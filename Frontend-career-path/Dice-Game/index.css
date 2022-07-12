@@ -1,0 +1,254 @@
+html, body { 
+    --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 0;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+}
+h1{
+    font-size: 25px;
+    text-align: left;
+    
+}
+
+.title {
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    background: black;
+    color:white;
+    margin-top: 0;
+    padding: 20px 0;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.20);
+}
+.subtitle{
+    margin-top: 0;
+    border-top: 4px solid #a8e6cf;
+    border-bottom: 4px solid #ffd3b6;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    
+}
+
+#info{
+    background: gray;
+    color:#dcedc1;
+    font-size: 27px;
+    letter-spacing: 3px;
+    padding: 20px 0;
+}
+#message{
+    background: black;
+    color:white;
+    padding:20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    position:absolute;
+    
+}
+.container {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 35px;
+    background-color: white;
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+    padding: 50px;
+    height: 60vh;
+}
+.scores-group{
+    
+    border:2px solid salmon;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    
+    justify-content: space-around;
+    background: #D6DEDE;
+    
+}
+.score-1{
+    position:relative;
+    left: -50px;
+}
+
+.score-2{
+    position:relative;
+    right: -50px;
+}
+.players {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color:#ff8b94;
+    color:white;
+    margin: 0 auto;
+    font-size: 45px;
+    line-height:15vh;
+    display: block;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.dice-info{
+    
+    font-size: 20px;
+
+    
+}
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#settingsBtn{
+    position:absolute;
+    outline: 0;
+    font-size: 22px;
+    color:white;
+    background:coral;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 180px;
+    cursor:pointer;
+}
+#settingsBtn:hover{
+    background:grey;
+}
+#rollBtn {
+    background-color:#45C4B0;
+    margin: 60px 0;
+}
+
+#resetBtn {
+    background-color: var(--color-4);
+    margin: 60px 0;
+}
+#playBtn{
+    background:darkcyan;
+    margin-top: 20px;
+}
+#playBtn:hover, 
+#playBtn:focus, 
+#rollBtn:hover, 
+#rollBtn:focus, 
+#resetBtn:hover, 
+#resetBtn:focus{
+    background:grey;
+}
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+/*________________Radio button*/
+.radio-group{
+    
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around
+}
+.content-input {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.content-input:hover,
+.content-input:focus-within {
+  background: hsla(0, 0%, 80%, .14);
+}
+
+.radio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio-design {
+  width: 15px;
+  height: 15px;
+  border-radius: 100px;
+
+  background:coral;
+  position: relative;
+}
+
+.radio-design::before {
+  content: '';
+
+  display: flex;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.radio:checked+.radio-design::before {
+  transform: scale(0);
+}
+
+.radio-text {
+  
+  margin-left: 14px;
+  transition: .3s;
+}
+
+.radio:checked~.radio-text {
+  color: hsl(0, 0%, 40%);
+}
+

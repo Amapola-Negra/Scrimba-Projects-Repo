@@ -1,0 +1,70 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <h1 class="title">DICE GAME 🎲</h1>
+        <div class="container" id="settings">
+            <h2 class="subtitle">Settings</h2>
+            <h3>Choose a player to start</h3>
+            <form name="myPlayers" class="radio-group">
+            <label class="content-input">
+            <input type="radio" class="radio" name="player" checked>
+            <div class="radio-design"></div>
+            <div class="radio-text">Player 1</div>
+            </label>
+            <label class="content-input">
+            <input type="radio" class="radio" name="player">
+            <div class="radio-design"></div>
+            <div class="radio-text">Player 2</div>
+            </label>
+            </form>
+            
+            <h3>Choose a mode</h3>
+            <form name="myMode" class="radio-group">
+            <label class="content-input">
+            <input type="radio" class="radio" name="mode" checked>
+            <div class="radio-design"></div>
+            <div class="radio-text">Just a dice</div>
+            </label>
+            <label class="content-input">
+            <input type="radio" class="radio" name="mode">
+            <div class="radio-design"></div>
+            <div class="radio-text">Double or nothing</div>
+            </label>
+            </form>
+            <button id="playBtn">Play</button>
+        </div>
+        <div class="container" id="game">
+            
+            <h2 class="subtitle">Game <span id="settingsBtn">⚙️</span></h2>
+            <h2 id="info"></h2>
+            <div class="scores-group">
+                <h1 class="score-1">Score 1: 
+                    <span id="player1Scoreboard">0</span>
+                </h1>
+                <h1 id="message">Player 1 Turn</h1>
+                <h1 class="score-2">Score 2: 
+                    <span id="player2Scoreboard">0</span>
+                </h1>
+            </div>
+            <div class="players">
+                <div id="player1">
+                    
+                    <div id="player1Dice" class="dice active dice-info">Player 1</div>
+                </div>
+                <button id="rollBtn">Roll Dice 🎲</button>
+                <button id="resetBtn">Reset Game 🔁</button>
+                <div id="player2">
+                    
+                    <div id="player2Dice" class="dice dice-info">Player 2</div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        <script src="index.pack.js"></script>
+    </body>
+</html>
