@@ -3,4 +3,4 @@
 <h2>Screenshot</h2>
 <img src="BUSINESS-CARD.PNG">
 <h2>See it live</h2>
-<a href="index.html/">Business Card</a>
+<a href="https://amapola-negra.github.io/Scrimba-Projects-Repo/Frontend-career-path/Business-Card/">Business Card</a>
