@@ -1,0 +1,27 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Karla:wght@500;700&family=Merienda:wght@700&family=Raleway:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section class="top">
+                <h2>Metric/Imperial unit converter</h2>
+                <p>Introduce a number and press enter</p>
+                <div class="big" id="number"></div>
+                <input onchange="changeNumber()" type="number" placeholder="Introduce a number" id="newNumber">
+            </section>
+            <section class="bottom">
+                <p>Length (Meter/Feet)</p>
+                <p class="ligth" id="length"></p>
+                <p>Volume (Liters/Gallons)</p>
+                <p class="ligth" id="volume"></p>
+                <p>Mass (Kilograms/Pounds)</p>
+                <p class="ligth" id="mass"></p>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
