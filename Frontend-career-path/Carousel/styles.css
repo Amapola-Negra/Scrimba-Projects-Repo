@@ -14,6 +14,7 @@
     More info: https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
 */
 body{
+    padding-top: 4em;
     box-sizing: border-box;
     background: black;
     color:rgba(120, 150, 230, 1);
