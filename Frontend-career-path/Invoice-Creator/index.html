@@ -1,0 +1,51 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section class="header">
+                <h1>Invoice creator</h1>
+                <p class="thanks">Thanks for choosing GoodCorp. LLC!</p>
+            </section>
+            <section class="invoice">
+                <div class="buttons">
+                    <button class="btn" id="wash">Wash Car: $10</button>
+                    <button class="btn" id="mow">Mow Lawn: $20</button>
+                    <button class="btn" id="pull">Pull Weeds: $30</button>
+                </div>
+                <div class="tasks">
+                    <div class="task-heading">
+                        <h4>Task</h4>
+                        <h4>Total</h4>
+                    </div>
+                    <div id="tasks-list">
+                        <div id="wash-task"></div>
+                        <div id="mow-task"></div>
+                        <div id="pull-task"></div>
+                        <div id="message"></div>
+                        
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="notes-group">
+                    <div class="notes">
+                        <h5>NOTES</h5>
+                        <p class="small">We accept cash, credit card or PayPal</p>
+                        
+                    </div>
+                    <div class="total">
+                        <h5>TOTAL AMOUNT</h5>
+                        <p id="total-amount"></p>
+                    </div>
+                    </div>
+                    <button class="send" id="send"><img class="mail-img" src="images/Mail.png">Send invoice</button>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
