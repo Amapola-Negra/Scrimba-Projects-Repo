@@ -3,4 +3,4 @@
 <h2>Screenshot</h2>
 <img src="CAROUSEL.PNG">
 <h2>See it live</h2>
-<a href="https://amapola-negra.github.io/Scrimba-Projects-Repo/Frontend-career-path/Emojis/">Carousel</a>
+<a href="https://amapola-negra.github.io/Scrimba-Projects-Repo/Frontend-career-path/Carousel/">Carousel</a>
