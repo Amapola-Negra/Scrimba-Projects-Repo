@@ -1,0 +1,171 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+    width: 80%;
+    max-width: 100%;
+    border-radius: 10%;
+}
+.food-img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+h1{
+    max-width: 6.8em;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    background: #eae6d8;
+    color: #5b5650;
+    border-radius: 16px;
+    margin-bottom: 1em;
+    box-shadow: 3px 5px 2px black;
+}
+span{
+    text-transform: uppercase;
+}
+h2{
+    max-width: 13em;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    background: #5b5650;
+    color: #eae6d8;
+    border-radius: 16px;  
+    box-shadow: 3px 5px 2px black;
+}
+h3{
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+    margin-bottom: 2em;
+}
+h4{
+    font-size: 1.1em;
+}
+p{
+    letter-spacing: 0.01em;
+    line-height: 1.6em;
+}
+.hero{
+    padding: 2em 0;
+    margin-top: 0;
+    height: 400px;
+    background-image: url(images/madrid.jpg);
+    background-size: cover;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+.img-item{
+    margin: 0 10% 2.5em 10%;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #008b9e;
+}
+.monuments{
+    background: #eae6d8;
+}
+.visit{
+    color: #5b5650;
+}
+.visit h4{
+    margin-bottom: 0.2em;
+}
+/*.street, .monuments p, .eat h4{
+    margin: 0 30% 2.5em 30%;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid #008b9e;
+}*/
+.img-item:last-child{
+    
+    border: none;
+}
+.eat h4{
+    margin-top: 1em;
+}
+.street {
+    margin-top: 0;
+}
+.street img{
+    width: 7px;
+    color: #008b9e;
+}
+.eat{
+    background: #dde6e9;
+}
+.guide{
+    background: #5b5650;
+    color: #eae6d8;
+    padding: 2em;
+    margin: 3em  2em;
+    border-radius: 20px;
+
+}
+footer{
+    padding: 2em 0;
+    background: #008b9e;
+    color: white;
+}
+
+@media(min-width: 800px){
+    
+    .img-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-item{
+        margin: 0;
+        padding-bottom: 0;
+        border: none;
+    }
+    .monuments .img-item{
+        width: 22%;
+    }
+    .monuments img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .eat .img-group{
+        justify-content: space-around;
+    }
+    .guide{
+        max-width: 500px;
+        display: flex;
+        margin: 4em auto;
+        justify-content: space-around;
+    }
+    .guide img{
+        width: 50%;
+        order: -1;
+        
+    }
+    .guide-items{
+        width: 30%;
+    }
+    /*display big images*/
+    .big-img{
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    
+    .big-img img:hover{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    
+}
