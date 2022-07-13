@@ -1,0 +1,40 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section class="container top">
+                <h1>Random passwords</h1>
+                <p class="subtitle">Never use an insecure password again.</p>
+                <div id="select-info"></div>
+
+                <input class="styled" id="selector" type="range" min="8" max="15" step="1" value="15" list="mydata" onchange="changeValue()">
+                <datalist id="mydata">
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                    <option value="11"></option>
+                    <option value="12"></option>
+                    <option value="13"></option>
+                    <option value="14"></option>
+                    <option value="15"></option>
+                </datalist>
+                <button onclick="generatePass()" class="generate-btn"><img src="images/Icon.png" width="15px" class="icon"> Generate passwords</button>
+
+            </section>
+            <section class="container pass-items">
+                
+                <input type="text" class="password" id="pass-1" value="password" onclick="copyToClipBoard1()"></input>
+                <input type="text" class="password" id="pass-2" value="password" onclick="copyToClipBoard2()"></input>
+                <input type="text" class="password" id="pass-3" value="password" onclick="copyToClipBoard3()"></input>
+                <input type="text" class="password" id="pass-4" value="password" onclick="copyToClipBoard4()"></input>
+            
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
