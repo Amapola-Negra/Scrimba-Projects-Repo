@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Changa', sans-serif;
+    color: white;
+}
+/*___________Typography________________*/
+h3{
+    font-size: 2em;
+    margin: 0.5em;
+}
+h2{
+    margin: 0;
+}
+.player-title{
+    color: black;
+}
+/*______________Layout______________________*/
+h1{
+    border-radius: 15px;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    background: #f0ead2;
+    color: black;
+}
+h1 img{
+    width: 60px;
+    margin-right: 6px;
+}
+#info{
+    background:#90a955;
+    padding: 1em 2em;
+    font-size: 1.5em;
+}
+.container {
+    background: #8a817c;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 10em;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.scores{
+    width: 550px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+.score-group{
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.player{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.score-items{
+    border: 5px solid grey;
+    border-radius: 15px;
+    background: black;
+}
+.score-header{
+    width: 122px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    background: #495057;
+    padding: 0.3em 1em;
+}
+.score-header img{
+    height: 40px;
+}
+.score-player{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.score{
+    border-radius: 15px;
+    width: 1.1em;
+}
+#start{
+    width: 500px;
+    padding: 2.5em;
+    background: #463f3a;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    top: 308px;
+}
+#start img{
+    height: 60px;
+}
+#start button{
+    margin-top: 1em;
+    padding: 1em;
+}
+.utility-btn{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+/*_______________Buttons______________________*/
+.btn-group{
+    margin: 1em;
+}
+button{
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background: #90a955;
+    color: inherit;
+}
+.minus{
+    margin-top: 0;
+}
+.minus button{
+    background: #eb5e28;
+}
+#reset, #rules{
+    background: #eb5e28;
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+}
+button:hover{
+    background: #8a817c;
+}
+#reset:hover{
+    background: #fb8500;
+}
+#rules{
+    background: #90a955;
+}
+#rules:hover{
+    background: #aad576;
+}
