@@ -12,4 +12,5 @@
   <li><a href="Frontend-career-path/Password-Generator/">Password Generator</a></li>
   <li><a href="Frontend-career-path/Color-Scheme-Generator/">Color Scheme Generator</a></li>
   <li><a href="Frontend-career-path/Movie-watchlist/">Movie Watchlist</a></li>
+  <li><a href="Frontend-career-path/Basketball-Scoreboard/">Basketball Scoreboard</a></li>
 </ul>
