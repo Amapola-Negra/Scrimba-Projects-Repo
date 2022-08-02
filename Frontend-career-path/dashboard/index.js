@@ -1,7 +1,7 @@
 fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=puppies")
     .then(res => res.json())
     .then(data => {
-        document.body.style.backgroundImage = `url(${data.urls.full})`
+        document.body.style.backgroundImage = `url(${data.urls.regular})`
 		document.getElementById("author").textContent = `By: ${data.user.name}`
     })
     .catch(err => {
@@ -11,7 +11,7 @@ fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&que
 		document.getElementById("author").textContent = `By: Dodi Achmad`
     })
 
-fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
+/*fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     .then(res => {
         if (!res.ok) {
             throw Error("Something went wrong")
@@ -29,7 +29,7 @@ fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
             <p>👇: $${data.market_data.low_24h.usd}</p>
         `
     })
-    .catch(err => console.error(err))
+    .catch(err => console.error(err))*/
 
 function getCurrentTime() {
     const date = new Date()
@@ -39,7 +39,7 @@ function getCurrentTime() {
 setInterval(getCurrentTime, 1000)
 
 navigator.geolocation.getCurrentPosition(position => {
-    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`)
+    fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial`)
         .then(res => {
             if (!res.ok) {
                 throw Error("Weather data not available")
@@ -56,3 +56,20 @@ navigator.geolocation.getCurrentPosition(position => {
         })
         .catch(err => console.error(err))
 });
+const api_url ="https://quotes.rest/qod?language=en";
+
+async function getapi(url)
+{
+  const response = await fetch(url);
+  var data = await response.json();
+  console.log(data.contents.quotes[0].quote);
+  document.getElementById("quote").innerHTML =`
+    <div>
+        <h2>${data.contents.quotes[0].quote}</h2>
+        <p>${data.contents.quotes[0].author}</h2></p>
+    </div>
+  
+  `
+}
+
+getapi(api_url);
