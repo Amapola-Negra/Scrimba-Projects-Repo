@@ -14,4 +14,5 @@
   <li><a href="Frontend-career-path/Movie-watchlist/">Movie Watchlist</a></li>
   <li><a href="Frontend-career-path/Basketball-Scoreboard/">Basketball Scoreboard</a></li>
   <li><a href="Frontend-career-path/dashboard/">Personal Dashboard</a></li>
+  <li><a href="Frontend-career-path/User-Profile/">User Profile</a></li>
 </ul>
