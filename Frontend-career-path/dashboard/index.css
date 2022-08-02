@@ -29,25 +29,11 @@ div.top {
 
 h1.time {
     text-align: center;
-    font-size: 5em;
+    font-size: 5rem;
 }
 
-div#crypto {
-    font-size: 1.3rem;
-}
-
-div#crypto > p {
-    margin: 0;
-}
-
-div#crypto-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-div#crypto-top > span {
-    margin-left: 10px;
+#quote{
+    text-shadow: 2px 3px 16px #242424; 
 }
 
 div#weather {
