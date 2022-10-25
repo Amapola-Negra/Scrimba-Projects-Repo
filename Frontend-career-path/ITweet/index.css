@@ -86,13 +86,14 @@ button:focus{
 }
 .thread,
 .remove{
+    width:fit-content;
     background: none;
     font-size: 12px;
     text-align: left;
 }
 .thread{
     color: #77cf89;
-    padding: .3em 0;
+    padding: 0;
 }
 .remove{
     color: red;
@@ -146,7 +147,7 @@ button:focus{
     display: flex;
     font-size: 13px;
     justify-content: space-between;
-    width: 160px;
+    width: 100%;
 }
 
 .tweet-detail{
