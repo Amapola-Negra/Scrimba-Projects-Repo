@@ -75,9 +75,9 @@ function handleThreadClick(replyId){
     })[0] 
     if (targetTweetObj.replies.length){
         if(document.getElementById(`replies-${replyId}`).classList.contains('hidden')){
-            document.getElementById(`thread-${replyId}`).textContent = "Mostrar hilo"
+            document.getElementById(`thread-${replyId}`).textContent = "Show"
         }else{
-            document.getElementById(`thread-${replyId}`).textContent = "Ocultar hilo"
+            document.getElementById(`thread-${replyId}`).textContent = "Hide"
         }
     }
 }
@@ -158,14 +158,15 @@ function getFeedHtml(){
                     `
             })
         }
-        
+       
         feedHtml += `
             <div class="tweet">
                 <div class="tweet-inner">
                     <img src="${tweet.profilePic}" class="profile-pic">
                     <div>
                         <p class="handle">${tweet.handle}</p>
-                        <button class="remove" data-remove="${tweet.uuid}">${tweet.handle === "@Myself" ? "Remove" : ""}</button>
+                        ${tweet.handle === "@Myself" ? `<button class="remove" data-remove="${tweet.uuid}">Remove</button>` : ""}
+                        
                         <p class="tweet-text">${tweet.tweetText}</p>
                         <div class="tweet-details">
                             <span class="tweet-detail">
@@ -175,6 +176,8 @@ function getFeedHtml(){
                                 ></i>
                                 ${tweet.replies.length}
                             </span>
+                            <!-- This button is going to show all the replies -->
+                            <button class="thread" id="thread-${tweet.uuid}" data-thread="${tweet.uuid}">Show </button>
                             <span class="tweet-detail">
                                 <i class="fa-solid fa-heart ${likeIconClass}"
                                 data-like="${tweet.uuid}"
@@ -188,8 +191,7 @@ function getFeedHtml(){
                                 ${tweet.retweets}
                             </span>
                         </div> 
-                        <!-- This button is going to show all the replies -->
-                        <button class="thread" id="thread-${tweet.uuid}" data-thread="${tweet.uuid}">Mostrar hilo</button>  
+                        
                     </div>            
                 </div>
                 <!-- Form to make a reply-->
@@ -205,7 +207,9 @@ function getFeedHtml(){
                 </div>   
             </div>
             `
+
    })
+   
    return feedHtml 
 }
 
@@ -214,4 +218,3 @@ function render(){
 }
 
 render()
-
