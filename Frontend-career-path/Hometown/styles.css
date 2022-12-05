@@ -118,6 +118,8 @@ p{
     display:flex;
 
 }
+.guide img{
+    width: 50%;
 footer{
     padding: 2em 0;
     background: #008b9e;
