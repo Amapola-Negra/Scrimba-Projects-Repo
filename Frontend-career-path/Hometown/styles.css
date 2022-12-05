@@ -146,7 +146,8 @@ footer{
         justify-content: space-around;
     }
     .guide{
-        max-width: 550px;
+        width: content;
+        max-width: 500px;
         display: flex;
         margin: 4em auto;
         justify-content: space-around;
