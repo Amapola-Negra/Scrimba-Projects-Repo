@@ -150,6 +150,7 @@ footer{
     .guide{
         max-width: 500px;
         display: flex;
+        flex-direction: column;
         margin: 4em auto;
         justify-content: space-around;
     }
