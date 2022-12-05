@@ -66,7 +66,7 @@ p{
     height: 400px;
     background-image: url(images/madrid.jpg);
     background-position: -50 0;
-    background-size: cover;
+    object-fit: cover;
 }
 .container{
     width: 90%;
