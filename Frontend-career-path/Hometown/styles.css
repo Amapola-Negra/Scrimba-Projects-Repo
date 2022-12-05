@@ -65,7 +65,7 @@ p{
     margin-top: -1em;
     height: 400px;
     background-image: url(images/madrid.jpg);
-    background-position: -50 0;
+    background-position: -50px 0;
     object-fit: cover;
 }
 .container{
