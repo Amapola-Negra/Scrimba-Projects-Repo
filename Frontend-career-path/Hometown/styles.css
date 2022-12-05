@@ -124,7 +124,7 @@ footer{
 
 @media(min-width: 800px){
     .hero{
-        background-position: 0 -60px;
+        background-position: 0 -160px;
     }
     .img-group {
         display: flex;
