@@ -62,7 +62,7 @@ p{
 }
 .hero{
     padding: 2em 0;
-    margin-top: -1em;
+    margin-top: 0;
     height: 400px;
     background-image: url(images/madrid.jpg);
     image-size: cover;
