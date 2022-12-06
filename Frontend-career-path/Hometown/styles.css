@@ -154,6 +154,7 @@ footer{
     }
     .guide img{
         width: 50%;
+        object-fit: cover;
         order: -1;
         
     }
