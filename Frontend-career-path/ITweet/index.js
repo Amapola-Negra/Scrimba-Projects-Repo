@@ -1,6 +1,6 @@
 import { tweetsData } from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
-localStorage.clear();
+
 let savedTweetsData = JSON.parse(localStorage.getItem("savedTweetsData"))|| tweetsData
 
 
