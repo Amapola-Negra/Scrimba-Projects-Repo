@@ -1,8 +1,8 @@
 import { tweetsData } from './data.js'
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
-
-let savedTweetsData = JSON.parse(localStorage.getItem("savedTweetsData"))|| tweetsData
 localStorage.clear();
+let savedTweetsData = JSON.parse(localStorage.getItem("savedTweetsData"))|| tweetsData
+
 
 document.addEventListener('click', function(e){
     if(e.target.dataset.like){
