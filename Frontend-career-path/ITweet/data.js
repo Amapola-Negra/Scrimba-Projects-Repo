@@ -45,7 +45,7 @@ export const tweetsData = [
                 tweetText: `Pity!! I used to have an island, but I sold it last week. You never know when you're going to need something until you lose it.`,
             },
             {
-                handle: `@Paul Depressed <img src="images/ICON-6.png" class="icon"`,
+                handle: `@Celine Lucky <img src="images/ICON-6.png" class="icon"`,
                 profilePic: `images/PERSONAJE-7.png`,
                 tweetText: `I bought an island last week!! I have no idea what it measures. How many will be reading this?`,
             },
